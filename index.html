@@ -516,16 +516,30 @@
     }
     .role-name { font-size: 14px; font-weight: 600; margin-bottom: 2px; }
     .role-desc { font-size: 13px; color: var(--text-muted); }
-    .photo-placeholder {
-      width: 100%; aspect-ratio: 4/5;
-      background: var(--surface-alt);
+    .about-photo {
+      width: 100%;
+      aspect-ratio: 4/5;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+      display: block;
+    }
+    .about-certs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 24px;
+    }
+    .cert-chip {
+      font-size: 12px;
+      font-weight: 500;
+      padding: 5px 13px;
+      background: var(--surface);
       border: 1px solid var(--border);
       border-radius: 4px;
-      display: flex; flex-direction: column;
-      align-items: center; justify-content: center;
-      gap: 12px;
+      color: var(--text-muted);
     }
-    .photo-placeholder p { font-size: 13px; color: var(--text-muted); font-style: italic; margin: 0; }
 
     /* ── CONTACT ── */
     .contact-section {
@@ -972,41 +986,49 @@
       <div>
         <p class="section-label">About</p>
         <h2>Miroslav Sedláček</h2>
-        <p>I've spent years implementing software that changes how businesses operate — not as a consultant who hands over a report and leaves, but as the person who stays until it actually works.</p>
-        <p>Before going independent, I did this inside companies. At Mews, I worked on implementations of a cloud property management system used by hotels across Europe — learning where hospitality operations break down and how to fix them. At Rossum, I helped finance and accounting teams replace manual document processing with AI-powered automation at scale.</p>
-        <p>Implementation is never just configuration. It's understanding how people actually work, where the resistance will come from, and making sure the system fits the business — not the other way around. I've done this across industries and platforms. Now I do it independently, which means full accountability: one person, one contact, no layers between you and the work.</p>
+        <p>I've spent over ten years implementing software and fixing operations — not as a consultant who hands over a report and leaves, but as the person who stays until it actually works.</p>
+        <p>Before going independent, I did this inside companies. At Mews, I delivered 36 SaaS implementations for multinational hospitality organisations across Europe, then moved into product to redesign the onboarding workflow itself. At Inline Manual, I ran customer success and support for a global SaaS client base — cutting time-to-value by roughly 40% through structured lifecycle governance. At Rossum, I led 20+ enterprise onboarding projects for a €2M+ ARR portfolio, managing AI-powered document automation for finance teams at scale.</p>
+        <p>Implementation is never just configuration. It's understanding how people actually work, where the resistance will come from, and making sure the system fits the business — not the other way around. I've done this across hospitality, healthcare, finance, and professional services. Now I do it independently, which means full accountability: one person, one contact, no layers between you and the work.</p>
         <p>Based in Prague. Working across Czech Republic and Slovakia.</p>
-        <!-- ⚠ PLACEHOLDER: Add your start year for Backbone below -->
         <div class="roles">
           <div class="role">
             <div class="role-dot"></div>
             <div>
               <div class="role-name">Mews</div>
-              <div class="role-desc">Cloud PMS implementations for hotels across Europe</div>
+              <div class="role-desc">SaaS implementations + product for hospitality · 2018–2020</div>
+            </div>
+          </div>
+          <div class="role">
+            <div class="role-dot"></div>
+            <div>
+              <div class="role-name">Inline Manual</div>
+              <div class="role-desc">Director of Customer Success &amp; Support · 2021–2023</div>
             </div>
           </div>
           <div class="role">
             <div class="role-dot"></div>
             <div>
               <div class="role-name">Rossum</div>
-              <div class="role-desc">AI document processing implementations for finance teams</div>
+              <div class="role-desc">Enterprise onboarding, AI document automation · 2024–present</div>
             </div>
           </div>
           <div class="role">
             <div class="role-dot"></div>
             <div>
               <div class="role-name">Backbone Consulting</div>
-              <div class="role-desc">Operations, automation &amp; Odoo ERP — independently, since [year] <!-- update this --></div>
+              <div class="role-desc">Operations, automation &amp; Odoo ERP — independently</div>
             </div>
           </div>
         </div>
+        <div class="about-certs">
+          <span class="cert-chip">PRINCE2 Foundation</span>
+          <span class="cert-chip">Google Data Analytics</span>
+          <span class="cert-chip">English · Czech · Slovak</span>
+        </div>
       </div>
 
-      <div class="photo-placeholder">
-        <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#B5B1A8" stroke-width="1.2">
-          <circle cx="12" cy="8" r="4"/><path d="M6 20v-2a6 6 0 0 1 12 0v2"/>
-        </svg>
-        <p>Add a photo here</p>
+      <div>
+        <img src="miroslav.jpg" alt="Miroslav Sedláček" class="about-photo">
       </div>
     </div>
   </div>
