@@ -2,9 +2,58 @@
    ABOUT.CSS — about.html specific styles
    ============================================================ */
 
+/* ── WHY SECTION (opens the about page, comes before the bio) ── */
+.why-section {
+  padding: calc(var(--nav-height) + 80px) 0 100px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.why-inner {
+  max-width: 760px;
+}
+
+.why-inner .eyebrow {
+  margin-bottom: 24px;
+}
+
+.why-inner > h2 {
+  font-size: clamp(36px, 5vw, 60px);
+  margin-bottom: 52px;
+  max-width: 520px;
+}
+
+.why-body p {
+  font-size: 16px;
+  color: var(--text-muted);
+  line-height: 1.88;
+  margin-bottom: 22px;
+}
+
+.why-subheading {
+  font-family: 'Fraunces', serif;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  margin-top: 52px;
+  margin-bottom: 22px;
+  line-height: 1.2;
+}
+
+.why-closing {
+  font-size: 15.5px;
+  color: var(--text-muted);
+  margin-top: 36px;
+  line-height: 1.7;
+  font-style: italic;
+}
+
 /* ── PAGE HEADER ── */
+/* Note: .page-hero is no longer the first section on about.html
+   (the why-section precedes it), so nav-height offset is removed. */
 .page-hero {
-  padding: calc(var(--nav-height) + 80px) 0 80px;
+  padding: 80px 0;
   border-bottom: 1px solid var(--border);
 }
 

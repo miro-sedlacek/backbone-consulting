@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pricing — Backbone Consulting</title>
-  <meta name="description" content="Fixed, transparent pricing for Operations & Automation and Odoo ERP implementation. Assessment from €400. No surprises.">
+  <meta name="description" content="Fixed, transparent pricing with defined scope and payment terms. Assessment from €400. No surprises.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,19 +33,19 @@
   <div class="container">
     <div class="how-header">
       <h2>How every engagement works</h2>
-      <p>The same three steps apply to both services — no ambiguity about scope, price, or when we're done.</p>
+      <p>The same three steps apply to every engagement — no ambiguity about scope, price, or when we're done.</p>
     </div>
     <div class="grid-line steps-grid">
       <div class="cell step reveal">
         <div class="step-num">01</div>
         <h3>Assessment / Discovery</h3>
-        <p>I interview you, map your situation, and deliver a written report: what to fix, which tools to use, and what it will cost. Useful on its own — the roadmap for everything that follows.</p>
+        <p>I interview you, map your situation, and deliver a written report: what to fix, which approach to take, and what it will cost. Useful on its own — the roadmap for everything that follows.</p>
         <p class="step-meta">Fixed fee · paid upfront</p>
       </div>
       <div class="cell step reveal">
         <div class="step-num">02</div>
         <h3>Implementation</h3>
-        <p>Scope defined in the assessment. Built, configured, tested, and signed off. No ambiguity about when we're done. Compliance configuration included for Odoo engagements.</p>
+        <p>Scope defined in the assessment. Built, configured, tested, and signed off. No ambiguity about when we're done.</p>
         <p class="step-meta">Fixed price · 50% upfront · 50% on delivery</p>
       </div>
       <div class="cell step reveal">
@@ -64,165 +64,91 @@
   <div class="container">
     <p class="section-label">Pricing</p>
 
-    <div class="tabs">
-      <button class="tab active" onclick="showTab('auto', this)">Operations &amp; Automation</button>
-      <button class="tab" onclick="showTab('odoo', this)">Odoo ERP</button>
+    <div class="grid-line auto-grid">
+      <div class="cell reveal">
+        <div class="price-card-name">Assessment</div>
+        <div class="price-card-sub">Discovery interview + written report with recommendations, costs, scenarios, and time estimates.</div>
+        <div class="price-big">€400</div>
+        <div class="price-fine">Fixed fee · paid upfront</div>
+        <ul class="incl-list">
+          <li>Intake interview</li>
+          <li>Current process mapping</li>
+          <li>Written findings report</li>
+          <li>Recommendations + cost estimates</li>
+        </ul>
+      </div>
+      <div class="cell card-dark reveal">
+        <div class="price-card-name">Implementation</div>
+        <div class="price-card-sub">Scope defined in assessment. Price confirmed before you commit. Built, tested, and signed off.</div>
+        <div class="price-big">From €800</div>
+        <div class="price-fine">50% upfront · 50% on delivery</div>
+        <ul class="incl-list">
+          <li>Scope confirmed in writing</li>
+          <li>Built &amp; tested to specification</li>
+          <li>Handover documentation</li>
+          <li>Formal sign-off on completion</li>
+        </ul>
+      </div>
+      <div class="cell reveal">
+        <div class="price-card-name">Ongoing support</div>
+        <div class="price-card-sub">For existing clients after implementation. Tailored to what was built and what you need.</div>
+        <div class="price-big">On request</div>
+        <div class="price-fine">Monthly · follows implementation only</div>
+        <ul class="incl-list">
+          <li>System maintenance</li>
+          <li>Edge case handling</li>
+          <li>Adaptations as you grow</li>
+        </ul>
+      </div>
     </div>
 
-    <!-- AUTOMATION PANEL -->
-    <div class="panel active" id="panel-auto">
-      <div class="grid-line auto-grid">
-        <div class="cell reveal">
-          <div class="price-card-name">Assessment</div>
-          <div class="price-card-sub">Discovery interview + written report with tool recommendations, costs, scenarios, and time estimates.</div>
-          <div class="price-big">€400</div>
-          <div class="price-fine">Fixed fee · paid upfront</div>
-          <ul class="incl-list">
-            <li>Intake interview</li>
-            <li>Current process mapping</li>
-            <li>Written findings report</li>
-            <li>Tool recommendations + cost estimates</li>
-          </ul>
-        </div>
-        <div class="cell card-dark reveal">
-          <div class="price-card-name">Implementation</div>
-          <div class="price-card-sub">Scope defined in assessment. Price confirmed before you commit. Built, tested, and signed off.</div>
-          <div class="price-big">From €800</div>
-          <div class="price-fine">50% upfront · 50% on delivery</div>
-          <ul class="incl-list">
-            <li>Scope confirmed in writing</li>
-            <li>Built &amp; tested to specification</li>
-            <li>Handover documentation</li>
-            <li>Formal sign-off on completion</li>
-          </ul>
-        </div>
-        <div class="cell reveal">
-          <div class="price-card-name">Ongoing support</div>
-          <div class="price-card-sub">For existing clients after implementation. Tailored to what was built and what you need.</div>
-          <div class="price-big">On request</div>
-          <div class="price-fine">Monthly · follows implementation only</div>
-          <ul class="incl-list">
-            <li>System maintenance</li>
-            <li>Edge case handling</li>
-            <li>Adaptations as you grow</li>
-          </ul>
-        </div>
+    <div style="height:2px;"></div>
+    <div class="strip">Also available — Service Audit</div>
+    <div class="grid-line audit-grid">
+      <div class="cell reveal">
+        <div class="price-card-name">Single audit</div>
+        <div class="price-card-sub">I experience your service as a customer and write up what's actually happening — against your standards or a general framework.</div>
+        <div class="price-big">From €400</div>
+        <div class="price-fine">One visit + written report</div>
       </div>
-
-      <div style="height:2px;"></div>
-      <div class="strip">Also available — Service Audit</div>
-      <div class="grid-line audit-grid">
-        <div class="cell reveal">
-          <div class="price-card-name">Single audit</div>
-          <div class="price-card-sub">I experience your service as a customer and write up what's actually happening — against your standards or a general framework.</div>
-          <div class="price-big">From €400</div>
-          <div class="price-fine">One visit + written report</div>
-        </div>
-        <div class="cell reveal">
-          <div class="price-card-name">Baseline</div>
-          <div class="price-card-sub">Three visits over 2–3 weeks. Captures variance, not just one bad day. Best for hospitality, retail, clinics, and fitness.</div>
-          <div class="price-big">From €800</div>
-          <div class="price-fine">3 visits · 2–3 weeks</div>
-        </div>
-        <div class="cell reveal">
-          <div class="price-card-name">Recurring</div>
-          <div class="price-card-sub">Quarterly cadence or multiple locations. Scoped per client.</div>
-          <div class="price-big">On request</div>
-          <div class="price-fine">Multi-location or quarterly</div>
-        </div>
+      <div class="cell reveal">
+        <div class="price-card-name">Baseline</div>
+        <div class="price-card-sub">Three visits over 2–3 weeks. Captures variance, not just one bad day. Best for hospitality, retail, clinics, and fitness.</div>
+        <div class="price-big">From €800</div>
+        <div class="price-fine">3 visits · 2–3 weeks</div>
       </div>
-
-      <p class="audit-foot">Automation tools: Make · Zapier · n8n · spreadsheets · email · dashboards — whichever fits your stack. All prices exclusive of VAT.</p>
+      <div class="cell reveal">
+        <div class="price-card-name">Recurring</div>
+        <div class="price-card-sub">Quarterly cadence or multiple locations. Scoped per client.</div>
+        <div class="price-big">On request</div>
+        <div class="price-fine">Multi-location or quarterly</div>
+      </div>
     </div>
 
-    <!-- ODOO PANEL -->
-    <div class="panel" id="panel-odoo">
-
-      <!-- Discovery -->
-      <div class="discovery-box reveal">
-        <div>
-          <span class="service-badge" style="margin-bottom:16px; display:inline-block;">Step 1 — Discovery</span>
-          <h3>Process mapping + Odoo recommendation report</h3>
-          <p style="margin-top:10px;">Two working sessions with your team · full process map · module selection · regulatory requirements · Odoo licence recommendation · data migration assessment · implementation plan with timeline and total cost. Written report within one week.</p>
-        </div>
-        <div class="discovery-price">
-          <div class="price-big">€700</div>
-          <div class="discovery-credit">Credited in full if<br>implementation proceeds</div>
-        </div>
-      </div>
-
-      <!-- Packages -->
-      <div class="strip" style="margin-top:2px;">Step 2 — Implementation packages</div>
-      <div class="grid-line pkg-grid">
-        <div class="pkg reveal">
-          <div class="pkg-name">Starter</div>
-          <div class="pkg-meta">~30h · 1–2 modules · up to 5 users</div>
-          <div class="pkg-price">€2,500</div>
-          <div class="pkg-desc">CRM or invoicing. Proof of concept for businesses stepping up from spreadsheets.</div>
-        </div>
-        <div class="pkg popular reveal">
-          <div class="popular-pill">Most common</div>
-          <div class="pkg-name">Standard</div>
-          <div class="pkg-meta">~80h · 3–4 modules · up to 15 users</div>
-          <div class="pkg-price">€6,500</div>
-          <div class="pkg-desc">Sales + invoicing + inventory + accounting. The typical Czech SMB implementation.</div>
-        </div>
-        <div class="pkg reveal">
-          <div class="pkg-name">Advanced</div>
-          <div class="pkg-meta">~150h · 5+ modules · up to 30 users</div>
-          <div class="pkg-price">€12,000</div>
-          <div class="pkg-desc">Multi-department, data migration from existing system, one integration included.</div>
-        </div>
-        <div class="pkg reveal">
-          <div class="pkg-name">Custom</div>
-          <div class="pkg-meta">250h+ · complex scope</div>
-          <div class="pkg-price">On request</div>
-          <div class="pkg-desc">Multi-entity or complex workflows. Discovery required before pricing.</div>
-        </div>
-      </div>
-
-      <!-- Included -->
-      <div class="included-box">
-        <h4>Included in every package</h4>
-        <div class="incl-grid">
-          <div class="incl-item">VAT &amp; regulatory compliance configuration</div>
-          <div class="incl-item">Bank &amp; payment format integrations</div>
-          <div class="incl-item">Go-live support (first 2 weeks)</div>
-          <div class="incl-item">Data import (customers, products, invoices)</div>
-          <div class="incl-item">User training sessions</div>
-          <div class="incl-item">Odoo Enterprise licence guidance</div>
-        </div>
-      </div>
-
-      <!-- Retainer -->
-      <div class="strip" style="margin-top:24px;">Step 3 — Support retainer</div>
-      <div class="grid-line retainer-grid">
-        <div class="cell reveal">
-          <div class="retainer-name">Light</div>
-          <div class="retainer-hours">4h/month · questions &amp; small fixes</div>
-          <div class="retainer-price">€400<sup>/mo</sup></div>
-        </div>
-        <div class="cell reveal">
-          <div class="retainer-name">Standard</div>
-          <div class="retainer-hours">8h/month · monthly check-in + tweaks</div>
-          <div class="retainer-price">€700<sup>/mo</sup></div>
-        </div>
-        <div class="cell reveal">
-          <div class="retainer-name">Active</div>
-          <div class="retainer-hours">16h/month · ongoing support + customisation</div>
-          <div class="retainer-price">€1,200<sup>/mo</sup></div>
-        </div>
-      </div>
-
-      <p class="price-footnote">Hours are monthly and do not roll over. Overages billed at €85/hour. 6-month minimum commitment. Odoo Enterprise licence sold separately. All prices exclusive of VAT.</p>
-    </div>
+    <p class="audit-foot">Tools are selected for each engagement based on what actually fits — not based on affiliation or certification. All prices exclusive of VAT.</p>
 
   </div>
 </section>
 
 
-<!-- ══ FLEXIBILITY NOTE ══ -->
+<!-- ══ LARGER PLATFORM NOTE ══ -->
 <section class="pricing-note-section">
+  <div class="container">
+    <div class="pricing-note-inner">
+      <div>
+        <p class="section-label">Need a larger platform?</p>
+        <h2>Beyond the standard scope</h2>
+      </div>
+      <div class="reveal">
+        <p>Some situations call for a full ERP or a comprehensive integrated system. I will help you identify what fits your business, scope what is involved, and either implement it or connect you with someone better placed to do so if the project is beyond my scope. Pricing on request following an initial assessment.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ FLEXIBILITY NOTE ══ -->
+<section class="pricing-note-section" style="border-top: 1px solid var(--border); background: var(--bg);">
   <div class="container">
     <div class="pricing-note-inner">
       <div>
@@ -241,8 +167,8 @@
 <!-- ══ CTA ══ -->
 <section class="pricing-cta-section">
   <div class="container">
-    <h2>Not sure which track fits?</h2>
-    <p>Most clients start with the Assessment (€400) or Odoo Discovery (€700) — a low-risk first step with a written output you keep regardless of what you decide next.</p>
+    <h2>Not sure where to start?</h2>
+    <p>Most clients begin with the Assessment (€400) — a low-risk first step with a written output you keep regardless of what you decide next.</p>
     <div class="pricing-cta-btns">
       <a href="contact.html" class="btn btn-dark">Schedule a Call →</a>
       <a href="case-studies.html" class="btn btn-outline">See how it worked for others →</a>
