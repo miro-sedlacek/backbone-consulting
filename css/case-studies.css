@@ -1,0 +1,226 @@
+/* ============================================================
+   CASE-STUDIES.CSS — case-studies.html specific styles
+   ============================================================ */
+
+/* ── PAGE HEADER ── */
+.cs-page-hero {
+  padding: calc(var(--nav-height) + 80px) 0 80px;
+  border-bottom: 1px solid var(--border);
+}
+
+.cs-page-hero h1 {
+  font-size: clamp(40px, 5.5vw, 72px);
+  max-width: 760px;
+  margin-bottom: 20px;
+}
+.cs-page-hero h1 em {
+  font-style: italic;
+  font-weight: 300;
+  color: var(--text-muted);
+}
+
+.cs-page-hero p {
+  font-size: 17px;
+  color: var(--text-muted);
+  max-width: 540px;
+  line-height: 1.78;
+}
+
+/* ── CASE STUDY CARDS GRID ── */
+.cs-list-section {
+  padding: 80px 0;
+}
+
+.cs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  background: var(--border);
+}
+
+/* ── INDIVIDUAL CASE STUDY CARD ── */
+.cs-card {
+  background: var(--surface);
+  padding: 44px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cs-card-meta {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.cs-card-stats {
+  display: flex;
+  gap: 36px;
+  margin-bottom: 28px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--border);
+}
+
+.cs-stat-num {
+  font-family: 'Fraunces', serif;
+  font-size: 46px;
+  font-weight: 600;
+  color: var(--accent);
+  line-height: 1;
+}
+.cs-stat-lbl {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 4px;
+  line-height: 1.4;
+}
+
+.cs-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.cs-card-industry {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 18px;
+}
+
+.cs-card p {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin-bottom: 14px;
+  flex: 1;
+}
+
+.cs-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--accent);
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  transition: gap .18s;
+}
+.cs-card-link:hover { gap: 10px; }
+
+/* ── PLACEHOLDER CARD ── */
+.cs-card-placeholder {
+  background: var(--surface-alt);
+  border: 2px dashed var(--border-strong) !important;
+  padding: 44px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 360px;
+}
+
+.placeholder-label {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  background: var(--border);
+  color: var(--text-muted);
+  padding: 4px 12px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.cs-card-placeholder h3 {
+  font-size: 20px;
+  color: var(--border-strong);
+  margin-bottom: 10px;
+}
+
+.cs-card-placeholder p {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  opacity: .7;
+}
+
+/* ── FULL CASE STUDY DETAIL ── */
+.cs-detail-section {
+  padding: 100px 0;
+  border-top: 1px solid var(--border);
+}
+
+.cs-detail-inner {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.cs-meta { position: sticky; top: calc(var(--nav-height) + 24px); }
+
+.cs-meta h2 { font-size: 34px; margin-bottom: 32px; }
+
+.stat-num {
+  font-family: 'Fraunces', serif;
+  font-size: 54px; font-weight: 600;
+  color: var(--accent); line-height: 1;
+}
+.stat-lbl { font-size: 13px; color: var(--text-muted); margin-bottom: 28px; }
+
+.case-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 28px;
+}
+
+/* Case body */
+.cs-body h3 { font-size: 24px; margin: 36px 0 10px; }
+.cs-body h3:first-child { margin-top: 0; }
+.cs-body p { font-size: 15px; color: var(--text-muted); line-height: 1.8; margin-bottom: 14px; }
+
+.pullquote {
+  border-left: 3px solid var(--accent);
+  padding: 6px 22px;
+  margin: 30px 0;
+  font-family: 'Fraunces', serif;
+  font-size: 20px; font-style: italic;
+  color: var(--text); line-height: 1.5;
+}
+
+/* ── CASE STUDIES CTA ── */
+.cs-cta-section {
+  padding: 80px 0;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  background: var(--surface);
+}
+
+.cs-cta-section h2 { font-size: clamp(28px, 4vw, 46px); margin-bottom: 16px; }
+.cs-cta-section p { font-size: 16px; color: var(--text-muted); margin-bottom: 32px; line-height: 1.7; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 960px) {
+  .cs-grid { grid-template-columns: repeat(2, 1fr); }
+  .cs-detail-inner { grid-template-columns: 1fr; gap: 48px; }
+  .cs-meta { position: static; }
+}
+
+@media (max-width: 600px) {
+  .cs-list-section,
+  .cs-detail-section,
+  .cs-cta-section { padding: 64px 0; }
+  .cs-grid { grid-template-columns: 1fr; }
+  .cs-card { padding: 36px 24px; }
+  .cs-card-placeholder { padding: 36px 24px; min-height: 280px; }
+  .cs-detail-inner { gap: 36px; }
+  .cs-card-stats { gap: 24px; }
+  .cs-stat-num { font-size: 36px; }
+}

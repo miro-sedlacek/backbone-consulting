@@ -74,8 +74,6 @@ Small and medium businesses in Czech Republic and Slovakia, plus international c
 Direct, honest, no-nonsense. Written for founders and business owners who are busy and sceptical of consultants. No fluff, no buzzwords. Concrete problems, concrete prices, concrete outcomes.
 
 ## What still needs doing
-- Add Miroslav's photo (replace the SVG placeholder in the About section)
-- Add the `[year]` placeholder in the About section (when Backbone Consulting started independently)
 - Czech language version of the site
 - More case studies as they come in
 - Contact form (Netlify Forms — free up to 100 submissions/month)

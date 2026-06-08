@@ -1,0 +1,374 @@
+/* ============================================================
+   HOME.CSS — Landing page (index.html) specific styles
+   ============================================================ */
+
+/* ── HERO ── */
+.hero {
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  padding: calc(var(--nav-height) + 40px) 0 80px;
+  background: var(--bg);
+}
+
+.hero h1 {
+  font-size: clamp(42px, 6.5vw, 84px);
+  max-width: 860px;
+  margin-bottom: 20px;
+  line-height: 1.08;
+}
+.hero h1 em {
+  font-style: italic;
+  font-weight: 300;
+  color: var(--text-muted);
+}
+
+.hero-sub {
+  font-size: 17.5px;
+  color: var(--text-muted);
+  max-width: 560px;
+  line-height: 1.75;
+  margin-bottom: 48px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* ── SNIPPET BASE ── */
+.snippet {
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+  border-top: 1px solid var(--border);
+}
+
+.snippet-heading {
+  font-size: clamp(32px, 4vw, 52px);
+  margin-bottom: 18px;
+}
+.snippet-heading em {
+  font-style: italic;
+  font-weight: 300;
+  color: var(--text-muted);
+}
+
+.snippet-sub {
+  font-size: 16px;
+  color: var(--text-muted);
+  line-height: 1.75;
+  max-width: 520px;
+  margin-bottom: 40px;
+}
+
+.snippet-ctas {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* ── ABOUT SNIPPET ── */
+.about-snippet {
+  background: var(--surface);
+}
+
+.about-snippet-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  width: 100%;
+}
+
+.about-snippet-left .section-label { margin-bottom: 24px; }
+.about-snippet-left p {
+  font-size: 15.5px;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 14px;
+}
+
+.service-tracks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 28px 0 36px;
+}
+
+.service-track {
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px 20px;
+}
+.service-track-badge {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+.service-track-name {
+  font-family: 'Fraunces', serif;
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  line-height: 1.2;
+}
+.service-track-price {
+  font-size: 12.5px;
+  color: var(--text-muted);
+}
+
+.about-snippet-right {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.about-photo-snippet {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  display: block;
+}
+
+.about-snippet-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  background: var(--border);
+  margin-top: 2px;
+}
+
+.about-stat {
+  background: var(--surface);
+  padding: 22px 24px;
+}
+.about-stat-num {
+  font-family: 'Fraunces', serif;
+  font-size: 38px;
+  font-weight: 600;
+  color: var(--accent);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.about-stat-lbl {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* ── PRICING SNIPPET ── */
+.pricing-snippet {
+  background: var(--surface-alt);
+}
+
+.pricing-snippet-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 48px;
+  gap: 40px;
+}
+
+.pricing-snippet-header .section-label { margin-bottom: 0; }
+
+.pricing-snippet-note {
+  font-size: 13px;
+  color: var(--text-muted);
+  text-align: right;
+  max-width: 280px;
+  line-height: 1.6;
+}
+
+.snippet-tiers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  background: var(--border);
+  margin-bottom: 44px;
+}
+
+.tier {
+  background: var(--surface);
+  padding: 40px 32px;
+}
+
+.tier-name {
+  font-family: 'Fraunces', serif;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.tier-price {
+  font-family: 'Fraunces', serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--accent);
+  line-height: 1;
+  letter-spacing: -.02em;
+  margin-bottom: 6px;
+}
+
+.tier-fine {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.tier-desc {
+  font-size: 13.5px;
+  color: var(--text-muted);
+  line-height: 1.68;
+}
+
+.tier.tier-featured {
+  background: var(--text);
+}
+.tier.tier-featured .tier-name { color: var(--bg); }
+.tier.tier-featured .tier-price { color: #6FCF97; }
+.tier.tier-featured .tier-fine { color: rgba(247,244,239,.4); }
+.tier.tier-featured .tier-desc { color: rgba(247,244,239,.65); }
+
+/* ── CASE STUDIES SNIPPET ── */
+.case-snippet {
+  background: var(--surface);
+}
+
+.case-snippet-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 48px;
+}
+
+.teaser-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+  background: var(--border);
+  margin-bottom: 44px;
+}
+
+.teaser-card {
+  background: var(--surface);
+  padding: 44px 40px;
+}
+
+.teaser-stats {
+  display: flex;
+  gap: 44px;
+  margin-bottom: 28px;
+}
+
+.teaser-stat-num {
+  font-family: 'Fraunces', serif;
+  font-size: 52px;
+  font-weight: 600;
+  color: var(--accent);
+  line-height: 1;
+}
+.teaser-stat-lbl {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.teaser-card h3 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.teaser-card p {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin-bottom: 24px;
+}
+
+.teaser-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.teaser-placeholder {
+  background: var(--surface-alt);
+  border: 2px dashed var(--border-strong);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.teaser-placeholder-inner {
+  text-align: center;
+  padding: 60px 40px;
+  color: var(--text-muted);
+}
+.teaser-placeholder-inner h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: var(--border-strong);
+}
+.teaser-placeholder-inner p { font-size: 13px; }
+
+/* ── CONTACT SNIPPET ── */
+.contact-snippet {
+  background: var(--text);
+  border-top: none;
+}
+
+.contact-snippet-inner {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.contact-snippet .section-label {
+  color: rgba(247, 244, 239, .38);
+  margin-bottom: 24px;
+}
+
+.contact-snippet h2 {
+  font-size: clamp(34px, 5vw, 60px);
+  color: var(--bg);
+  margin-bottom: 20px;
+}
+
+.contact-snippet p {
+  font-size: 17px;
+  color: rgba(247, 244, 239, .55);
+  margin-bottom: 44px;
+  line-height: 1.72;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 960px) {
+  .about-snippet-grid { grid-template-columns: 1fr; gap: 48px; }
+  .about-snippet-right { order: -1; }
+  .about-photo-snippet { aspect-ratio: 3/2; object-position: center 25%; max-height: 340px; }
+  .snippet-tiers { grid-template-columns: 1fr; }
+  .teaser-cards { grid-template-columns: 1fr; }
+  .pricing-snippet-header { flex-direction: column; align-items: flex-start; }
+  .pricing-snippet-note { text-align: left; }
+}
+
+@media (max-width: 600px) {
+  .snippet { padding: 64px 0; }
+  .hero { padding: calc(var(--nav-height) + 24px) 0 64px; }
+  .service-tracks { grid-template-columns: 1fr; }
+  .teaser-stats { gap: 28px; }
+  .teaser-stat-num { font-size: 40px; }
+  .about-snippet-stats { grid-template-columns: 1fr 1fr; }
+}

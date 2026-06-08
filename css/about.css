@@ -1,0 +1,260 @@
+/* ============================================================
+   ABOUT.CSS — about.html specific styles
+   ============================================================ */
+
+/* ── PAGE HEADER ── */
+.page-hero {
+  padding: calc(var(--nav-height) + 80px) 0 80px;
+  border-bottom: 1px solid var(--border);
+}
+
+.page-hero h1 {
+  font-size: clamp(40px, 5.5vw, 72px);
+  max-width: 760px;
+  margin-bottom: 20px;
+}
+.page-hero h1 em {
+  font-style: italic;
+  font-weight: 300;
+  color: var(--text-muted);
+}
+
+.page-hero-sub {
+  font-size: 17px;
+  color: var(--text-muted);
+  max-width: 540px;
+  line-height: 1.78;
+}
+
+/* ── BIO SECTION ── */
+.about-bio-section {
+  padding: 100px 0;
+  border-top: 1px solid var(--border);
+}
+
+.about-bio-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.about-bio-inner h2 { font-size: 46px; margin-bottom: 22px; }
+
+.about-bio-inner p {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 14px;
+}
+
+.about-photo {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  display: block;
+}
+
+/* ── ROLE CARDS ── */
+.roles {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.role {
+  display: flex;
+  gap: 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px 18px;
+}
+
+.role-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+  margin-top: 5px;
+}
+
+.role-name { font-size: 14px; font-weight: 600; margin-bottom: 2px; }
+.role-desc { font-size: 13px; color: var(--text-muted); }
+
+/* ── CERTS ── */
+.about-certs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+/* ── SERVICES OVERVIEW ── */
+.services-section {
+  padding: 100px 0;
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.services-grid-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  background: var(--border);
+}
+
+.service-card-full {
+  background: var(--surface);
+  padding: 52px 44px;
+}
+
+.service-card-full h3 {
+  font-size: 30px;
+  margin-bottom: 14px;
+}
+
+.service-card-full > p {
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.72;
+  margin-bottom: 28px;
+}
+
+.problem-list {
+  list-style: none;
+  margin-bottom: 32px;
+}
+
+.problem-list li {
+  font-size: 14px;
+  color: var(--text-muted);
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  gap: 12px;
+}
+.problem-list li::before {
+  content: '→';
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.service-from {
+  font-size: 15px;
+  font-weight: 500;
+}
+.service-from strong { color: var(--accent); }
+
+/* ── PHILOSOPHY SECTION ── */
+.philosophy-section {
+  padding: 100px 0;
+  border-top: 1px solid var(--border);
+}
+
+.philosophy-inner {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.philosophy-label {
+  position: sticky;
+  top: calc(var(--nav-height) + 24px);
+}
+
+.philosophy-label h2 { font-size: 40px; }
+
+.philosophy-body p {
+  font-size: 16px;
+  color: var(--text-muted);
+  line-height: 1.82;
+  margin-bottom: 20px;
+}
+
+.philosophy-body p:last-child { margin-bottom: 0; }
+
+/* ── WHAT WE'RE NOT ── */
+.not-section {
+  padding: 100px 0;
+  border-top: 1px solid var(--border);
+  background: var(--surface-alt);
+}
+
+.not-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  background: var(--border);
+  margin-top: 52px;
+}
+
+.not-card {
+  background: var(--surface-alt);
+  padding: 40px 36px;
+}
+
+.not-card-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+  opacity: .6;
+}
+
+.not-card h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: var(--text-muted);
+  text-decoration: line-through;
+  text-decoration-color: var(--border-strong);
+}
+
+.not-card p {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+/* ── ABOUT CTA ── */
+.about-cta-section {
+  padding: 80px 0;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+.about-cta-section h2 {
+  font-size: clamp(28px, 4vw, 46px);
+  margin-bottom: 16px;
+}
+
+.about-cta-section p {
+  font-size: 16px;
+  color: var(--text-muted);
+  margin-bottom: 32px;
+  line-height: 1.7;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 960px) {
+  .about-bio-inner { grid-template-columns: 1fr; gap: 48px; }
+  .services-grid-2col { grid-template-columns: 1fr; }
+  .philosophy-inner { grid-template-columns: 1fr; gap: 40px; }
+  .philosophy-label { position: static; }
+  .not-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 600px) {
+  .about-bio-section,
+  .services-section,
+  .philosophy-section,
+  .not-section { padding: 72px 0; }
+  .service-card-full { padding: 36px 24px; }
+}
